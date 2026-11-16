@@ -1,0 +1,16 @@
+
+{
+  "name": "up-khatauni-app",
+  "version": "1.0.0",
+  "description": "Uttar Pradesh Khatauni Search App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
