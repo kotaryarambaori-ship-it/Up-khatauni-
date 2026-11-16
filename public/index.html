@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#087c50">
+  <title>मेरा भूलेख - UP खतौनी</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">मेरा भूलेख</div>
+  <div class="subtitle">उत्तर प्रदेश भूमि अभिलेख खोज</div>
+</header>
+
+<main class="container">
+
+  <section class="welcome">
+    <h2>स्वागत है!</h2>
+    <p>अपनी जमीन की खतौनी खोजें</p>
+    <span class="state">राज्य: उत्तर प्रदेश</span>
+  </section>
+
+  <section class="search-card">
+    <h2>भूमि विवरण चुनें</h2>
+
+    <label>जिला</label>
+    <select id="district">
+      <option value="">जिला चुनें</option>
+    </select>
+
+    <label>तहसील</label>
+    <select id="tehsil" disabled>
+      <option value="">पहले जिला चुनें</option>
+    </select>
+
+    <label>गाँव</label>
+    <select id="village" disabled>
+      <option value="">पहले तहसील चुनें</option>
+    </select>
+
+    <h3>खोज का तरीका चुनें</h3>
+
+    <label class="radio">
+      <input type="radio" name="searchType" value="name" checked>
+      खातेदार के नाम से
+    </label>
+
+    <label class="radio">
+      <input type="radio" name="searchType" value="khata">
+      खाता संख्या से
+    </label>
+
+    <label class="radio">
+      <input type="radio" name="searchType" value="gata">
+      गाटा / खसरा संख्या से
+    </label>
+
+    <label for="searchValue">खोज विवरण</label>
+    <input
+      id="searchValue"
+      type="text"
+      placeholder="यहाँ नाम या संख्या लिखें"
+      autocomplete="off"
+    >
+
+    <button id="searchBtn">खतौनी खोजें</button>
+
+    <div id="message" class="message" aria-live="polite"></div>
+  </section>
+
+  <section class="info-card">
+    <h3>सरकारी भूलेख पोर्टल</h3>
+    <p>
+      असली सरकारी खतौनी देखने के लिए आधिकारिक पोर्टल खोलें।
+      वहाँ मांगी गई OTP या CAPTCHA प्रक्रिया पूरी करें।
+    </p>
+    <a
+      class="official-btn"
+      href="https://upbhulekh.gov.in/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      सरकारी भूलेख खोलें
+    </a>
+  </section>
+
+  <footer>
+    <p>मेरा भूलेख | उत्तर प्रदेश</p>
+    <small>
+      यह स्वतंत्र ऐप है। सरकारी वेबसाइट नहीं है।
+    </small>
+  </footer>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
