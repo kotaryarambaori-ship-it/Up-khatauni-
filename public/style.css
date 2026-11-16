@@ -1,0 +1,174 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f8f4;
+  color: #18372a;
+}
+
+.header {
+  background: linear-gradient(135deg, #087c50, #16a36b);
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  border-radius: 0 0 22px 22px;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  padding: 16px;
+}
+
+.welcome {
+  background: #e0f4e8;
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 17px;
+}
+
+.welcome h2 {
+  margin: 0 0 8px;
+  color: #087c50;
+}
+
+.welcome p {
+  margin: 0 0 10px;
+}
+
+.state {
+  display: inline-block;
+  background: white;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.search-card,
+.info-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 17px;
+  box-shadow: 0 3px 14px #164c3012;
+}
+
+.search-card h2 {
+  color: #087c50;
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 15px 0 7px;
+  font-weight: 600;
+}
+
+select,
+input[type="text"] {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #c9ded1;
+  border-radius: 9px;
+  background: white;
+  font-size: 15px;
+  color: #18372a;
+}
+
+select:disabled {
+  background: #f0f0f0;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: normal;
+  margin: 12px 0;
+}
+
+.radio input {
+  accent-color: #087c50;
+  width: 18px;
+  height: 18px;
+}
+
+button,
+.official-btn {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: 20px;
+  background: #087c50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.message {
+  margin-top: 15px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.message.error {
+  color: #b42318;
+}
+
+.message.success {
+  color: #087c50;
+}
+
+.message a {
+  color: #087c50;
+  font-weight: bold;
+}
+
+.info-card h3 {
+  color: #087c50;
+  margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  color: #60766a;
+  line-height: 1.7;
+  font-size: 13px;
+}
+
+@media (max-width: 380px) {
+  .container {
+    padding: 11px;
+  }
+
+  .search-card,
+  .info-card {
+    padding: 15px;
+  }
+}
